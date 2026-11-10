@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-maroon-dark: #38070F;
+    --color-maroon: #58111A;
+    --color-maroon-light: #731A26;
+    --color-gold: #D4AF37;
+    --color-gold-light: #F3E5AB;
+    --color-gold-dark: #997819;
+    --color-cream: #FCFAF7;
+    --color-cream-card: #F7F3EC;
+    --color-henna: #2E150B;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: #2D2424;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B38728;
+}
+
+/* Glassmorphism & Gold Glow utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ECC86A 0%, #D4AF37 50%, #A97E1C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #ECC86A 0%, #D4AF37 50%, #B38728 100%);
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.15);
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #4A0E17 0%, #30080E 100%);
+}
+
+.bg-maroon-900 {
+  background-color: #38070F;
+}
+
+.bg-maroon-800 {
+  background-color: #4A0E17;
+}
+
+.bg-maroon-700 {
+  background-color: #5D121D;
+}
+
+.text-maroon-900 {
+  color: #38070F;
+}
+
+.text-maroon-800 {
+  color: #4A0E17;
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.text-gold-light {
+  color: #F3E5AB;
+}
+
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+.bg-gold-light {
+  background-color: #F8F1DC;
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+.bg-cream-50 {
+  background-color: #FCFAF7;
+}
+
+.bg-cream-100 {
+  background-color: #F7F3EC;
+}
+
+.bg-cream-200 {
+  background-color: #EFE8DC;
+}
+
+/* Mandala Decorative SVG background pattern */
+.bg-mandala-pattern {
+  background-image: radial-gradient(#D4AF37 0.75px, transparent 0.75px), radial-gradient(#D4AF37 0.75px, #FCFAF7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.95;
+}
